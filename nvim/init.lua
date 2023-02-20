@@ -13,6 +13,7 @@ require("ori.plugins.cmp")
 require("ori.plugins.treesitter")
 require("ori.plugins.autopairs")
 require("ori.plugins.gitsigns")
+require("ori.plugins.barbar")
 
 -- lsp
 require("ori.plugins.lsp.mason")
