@@ -14,6 +14,7 @@ require("ori.plugins.treesitter")
 require("ori.plugins.autopairs")
 require("ori.plugins.gitsigns")
 require("ori.plugins.barbar")
+require("ori.plugins.transparent")
 
 -- lsp
 require("ori.plugins.lsp.mason")

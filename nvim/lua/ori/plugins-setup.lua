@@ -91,6 +91,9 @@ return require("packer").startup(function(use)
 	use("nvim-tree/nvim-web-devicons")
 	use({ "romgrk/barbar.nvim", requires = "nvim-web-devicons" })
 
+	-- transparent
+	use("xiyaowong/nvim-transparent")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
