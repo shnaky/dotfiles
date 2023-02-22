@@ -24,11 +24,20 @@ keymap.set("v", "d", '"_d')
 keymap.set("n", "<leader>vs", "<C-w>v") -- vertical split
 keymap.set("n", "<leader>vh", "<C-w>s") -- horizontal split
 
+-- buffers
+keymap.set("n", "<leader>bb", ":bd<CR>") -- bye bye buffer
+
 -- navigate windows
 keymap.set("n", "<C-j>", "<C-w>j")
 keymap.set("n", "<C-k>", "<C-w>k")
 keymap.set("n", "<C-h>", "<C-w>h")
 keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Resize windows
+keymap.set("n", "<C-up>", "<C-w>+")
+keymap.set("n", "<C-down>", "<C-w>-")
+keymap.set("n", "<C-left>", "<C-w><")
+keymap.set("n", "<C-right>", "<C-w>>")
 
 -- plugin keymaps
 
@@ -45,4 +54,3 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- bufferline
 keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
 keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})
-keymap.set("n", "<leader>bb", "<Cmd>BufferLineCloseLeft<CR>", {}) -- bye bye!
