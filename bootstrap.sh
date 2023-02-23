@@ -11,3 +11,5 @@ fi
 
 # Symlinks for dotfiles
 ln -s "$DOTFILES/nvim" "$HOME/.config/nvim"
+
+ln -s "$DOTFILES/vim/.vimrc" "$HOME"
