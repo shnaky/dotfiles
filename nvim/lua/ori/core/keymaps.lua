@@ -8,6 +8,9 @@ keymap.set("n", "<leader>w", ":w!<CR>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<C-a>", "gg<S-v>G") -- select all
 
+-- visual mode
+keymap.set("x", "v", "<ESC>")
+
 -- move over soft-wrapped line
 keymap.set("n", "j", "gj")
 keymap.set("n", "k", "gk")
