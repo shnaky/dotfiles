@@ -12,6 +12,14 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+-- autocommand to automatically run 'PackerSync' whenever this file is saved
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+  augroup end
+]])
+
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	-- My plugins here
@@ -111,13 +119,3 @@ return require("packer").startup(function(use)
 		require("packer").sync()
 	end
 end)
-
--- TODO: make it work
--- autocommand to automatically run 'PackerSync' whenever this file is saved
--- boilerplate code from packer git
--- vim.cmd([[
---   augroup packer_user_config
---     autocmd!
---     autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
---   augroup end
--- ]])
