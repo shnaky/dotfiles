@@ -101,6 +101,9 @@ return require("packer").startup(function(use)
 	-- transparent
 	use("xiyaowong/nvim-transparent")
 
+	-- indent lines
+	use("lukas-reineke/indent-blankline.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
