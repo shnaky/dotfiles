@@ -15,6 +15,7 @@ require("ori.plugins.autopairs")
 require("ori.plugins.gitsigns")
 require("ori.plugins.transparent")
 require("ori.plugins.bufferline")
+require("ori.plugins.colorizer")
 
 -- lsp
 require("ori.plugins.lsp.mason")

@@ -19,8 +19,9 @@ return require("packer").startup(function(use)
 	-- lua module for asynchronous programming (dependency)
 	use("nvim-lua/plenary.nvim")
 
-	-- colorscheme
+	-- colorscheme & hex-colors
 	use({ "bluz71/vim-nightfly-colors", as = "nightfly" })
+	use("NvChad/nvim-colorizer.lua")
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")

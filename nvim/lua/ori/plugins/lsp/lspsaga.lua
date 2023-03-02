@@ -18,7 +18,7 @@ saga.setup({
 		},
 	},
 	-- winbar that shows tags under bufferline
-	-- small color bug when showtruen
+	-- small color bug when shown
 	symbol_in_winbar = {
 		enable = false,
 	},
