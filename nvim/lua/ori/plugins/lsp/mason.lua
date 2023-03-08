@@ -23,9 +23,13 @@ mason.setup()
 mason_lspconfig.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
-		"lua_ls",
-		"marksman",
+
 		"pyright",
+
+		-- essential
+		"lua_ls",
+		"jsonls",
+		"marksman",
 
 		-- WebDev
 		"html",

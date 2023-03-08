@@ -84,6 +84,13 @@ lspconfig["cssls"].setup({
 	on_attach = on_attach,
 })
 
+-- configure tsserver server
+lspconfig["tsserver"].setup({
+	capabilities = capabilities,
+	flags = lsp_flags,
+	on_attach = on_attach,
+})
+
 -- configure emmet language server
 lspconfig["emmet_ls"].setup({
 	capabilities = capabilities,
