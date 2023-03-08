@@ -21,6 +21,10 @@ null_ls.setup({
 		-- diagnostics.luacheck, -- lua linter (needs luarocks)
 		formatting.black, -- python formatter
 		diagnostics.flake8, -- python linter
+
+		-- WebDev
+		formatting.prettier, -- ts/js formatter
+		diagnostics.eslint_d, -- ts/js linter
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)

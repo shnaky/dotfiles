@@ -39,8 +39,8 @@ keymap.set("n", "<C-l>", "<C-w>l")
 -- Resize windows
 keymap.set("n", "<C-up>", "<C-w>+")
 keymap.set("n", "<C-down>", "<C-w>-")
-keymap.set("n", "<C-left>", "<C-w><")
-keymap.set("n", "<C-right>", "<C-w>>")
+keymap.set("n", "<C-left>", "<C-w>>")
+keymap.set("n", "<C-right>", "<C-w><")
 
 -- plugin keymaps
 
