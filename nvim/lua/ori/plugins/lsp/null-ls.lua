@@ -28,25 +28,25 @@ null_ls.setup({
 
 		-- WebDev
 
-    -- formatting and diagnostics work together with .eslintrc
-    formatting.eslint_d, -- ts/js formatter
+		-- formatting and diagnostics work together with .eslintrc
+		formatting.eslint_d, -- ts/js formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
-      -- only enable eslint if root has .eslintrc.js
-      condition = function(utils)
-        return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
-      end,
-    }),
+			-- only enable eslint if root has .eslintrc.js
+			condition = function(utils)
+				return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
+			end,
+		}),
 
 		formatting.prettierd.with({ -- html/css/json/markdown etc. formatter
-      -- let eslint_d with .eslintrc handle these ft
-      disabled_filetypes = {
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "vue"
-      },
-    }),
+			-- let eslint_d with .eslintrc handle these ft
+			disabled_filetypes = {
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+				"vue",
+			},
+		}),
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
@@ -70,10 +70,6 @@ null_ls.setup({
 })
 
 -- custom command to disable formatting
-vim.api.nvim_create_user_command(
-  'DisableLspFormatting',
-  function()
-    vim.api.nvim_clear_autocmds({ group = augroup, buffer = 0 })
-  end,
-  { nargs = 0 }
-)
+vim.api.nvim_create_user_command("DisableLspFormatting", function()
+	vim.api.nvim_clear_autocmds({ group = augroup, buffer = 0 })
+end, { nargs = 0 })
