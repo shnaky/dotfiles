@@ -31,6 +31,7 @@ null_ls.setup({
 		-- formatting and diagnostics work together with .eslintrc
 		formatting.eslint_d, -- ts/js formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
+			diagnostics_format = "[eslint] #{m}\n(#{c})",
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)
 				return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
