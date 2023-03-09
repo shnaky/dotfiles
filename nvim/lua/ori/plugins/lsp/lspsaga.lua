@@ -13,6 +13,7 @@ saga.setup({
 	},
 	ui = {
 		border = "rounded",
+		code_action = "",
 		colors = {
 			normal_bg = "#022746",
 		},
