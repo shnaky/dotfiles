@@ -28,8 +28,6 @@ mason_lspconfig.setup({
 
 		-- essential
 		"lua_ls",
-		"jsonls",
-		"marksman",
 
 		-- WebDev
 		"html",
@@ -50,9 +48,12 @@ mason_null_ls.setup({
 		"flake8", -- python linter
 		"black", -- python formatter
 
+		-- essential
+		"jsonlint", -- json linter
+
 		-- WebDev
 		"eslint_d", -- ts/js linter
-		"prettier", -- ts/js formatter
+		"prettierd", -- formatter for a lot of WebDev related stuff inculding json/markdown (look documentation)
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
