@@ -25,6 +25,7 @@ mason_lspconfig.setup({
 	ensure_installed = {
 
 		"pyright",
+		"clangd",
 
 		-- essential
 		"lua_ls",
@@ -47,6 +48,7 @@ mason_null_ls.setup({
 		"stylua", -- lua formatter
 		"flake8", -- python linter
 		"black", -- python formatter
+		"clang_format", -- c/c++ formatter
 
 		-- essential
 		"jsonlint", -- json linter

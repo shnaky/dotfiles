@@ -26,6 +26,7 @@ treesitter.setup({
 		"svelte",
 		"graphql",
 		"python",
+		"c",
 		"dockerfile",
 		"markdown",
 		"markdown_inline",

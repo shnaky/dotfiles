@@ -75,6 +75,17 @@ lspconfig["pyright"].setup({
 	capabilities = capabilities,
 })
 
+-- configure c/c++ server
+local clangd_capabilities = capabilities
+-- to remove warning: multiple different client offsetEncoding
+clangd_capabilities.offsetEncoding = "utf-8"
+
+lspconfig["clangd"].setup({
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = clangd_capabilities,
+})
+
 -- WebDev
 
 -- configure html server

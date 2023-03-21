@@ -6,10 +6,10 @@ if not status then
 end
 
 transparent.setup({
-	enable = false, -- boolean: enable transparent
+	-- enable = false, -- enable has been removed!
 	extra_groups = { -- table/string: additional groups that should be cleared
 		-- In particular, when you set it to 'all', that means all available groups
 		"NvimTreeNormal",
 	},
-	exclude = {}, -- table: groups you don't want to clear
+	exclude_groups = {}, -- table: groups you don't want to clear
 })

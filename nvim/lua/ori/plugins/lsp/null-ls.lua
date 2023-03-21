@@ -21,6 +21,7 @@ null_ls.setup({
 		formatting.stylua, -- lua formatter
 		formatting.black, -- python formatter
 		diagnostics.flake8, -- python linter
+		formatting.clang_format, -- c/c++ formatter
 		-- diagnostics.luacheck, -- lua linter (needs luarocks)
 
 		-- essential
